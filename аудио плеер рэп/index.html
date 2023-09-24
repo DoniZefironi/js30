@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аудиоплеер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bodys">
+  <div class="audio-player">
+    <div class="cover"></div>
+    <audio id="audio" src="VideoclubAmour_plastique_67670730.mp3"></audio>
+    <div class="controls">
+        <div class="play-controls">
+            <button id="playBtn" class="play"></button>
+        </div>
+        <div class="track-info">
+            <p class="track-artist">VIDEOCLUB</p>
+            <p class="track-title">Amour Plastique</p>
+        </div>
+        <div class="next-controls">
+            <button onclick="changeBackground()" id="prevBtn" class="prev"></button>
+            <button onclick="changeBackground()" id="nextBtn" class="next"></button>
+        </div>
+    </div>
+    <div class="progress-bar">
+      <input id="seekBar" type="range" min="0" value="0" step="1">
+    </div>
+    <div id="duration" class="duration">00:00</div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
